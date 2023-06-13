@@ -14,6 +14,7 @@ import { BookComponent } from './components/book/book.component';
 import { BooksComponent } from './components/books/books.component';
 import { SearchComponent } from './components/search/search.component';
 import { EditBookComponent } from './modal/edit-book/edit-book.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,9 @@ import { EditBookComponent } from './modal/edit-book/edit-book.component';
     provideAuth(() => getAuth()),
     provideDatabase(() => getDatabase()),
     provideFirestore(() => getFirestore()),
-    NgbModule
+    NgbModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
