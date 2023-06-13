@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "jgbookapp": {
+      "hosting": {
+        "firebaseCRUDApp": [
+          "jgbookapp"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "jgbookapp"
+  }
+}

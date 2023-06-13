@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "firebaseCRUDApp",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}
