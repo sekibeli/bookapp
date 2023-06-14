@@ -1,7 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild, NgModule } from '@angular/core';
 import { NgForm, FormsModule } from '@angular/forms';
 import { IBook } from 'src/app/models/book.model';
-
 import { BookService } from 'src/app/services/book.service';
 
 @Component({

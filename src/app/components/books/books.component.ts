@@ -35,8 +35,8 @@ export class BooksComponent implements OnInit {
 
   deleteBook(book: IBook) {
     if (confirm('Are you sure to delete this record ?') == true) {
-      // this.bookService.deleteBook(book).then(() => 
-      //  console.log('delete successful'));
+      this.bookService.deleteBook(book).then(() => 
+       console.log('delete successful'));
     }
   }
 }
