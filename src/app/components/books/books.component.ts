@@ -18,8 +18,9 @@ export class BooksComponent implements OnInit {
     private modal: NgbModal) { }
 
   ngOnInit() {
-    this.bookService.getBooks().subscribe((res: IBook[]) => {
-      this.books = res;
+    this.bookService.getBooks().subscribe((book: IBook[]) => {
+      this.books = book;
+      console.log('books:', this.books);
     })
   }
 

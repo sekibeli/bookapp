@@ -10,7 +10,6 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class BookService {
-
   constructor(private firestore: Firestore) { }
 
   addBook(book: IBook) {
@@ -20,7 +19,7 @@ export class BookService {
 
   getBooks(): Observable<IBook[]> {
     const booksRef = collection(this.firestore, 'books');
-    return collectionData(booksRef, { idField: 'id' }) as Observable<IBook[]>;
+     return collectionData(booksRef, { idField: 'id' }) as Observable<IBook[]>;
   }
 
   deleteBook(book: IBook) {
